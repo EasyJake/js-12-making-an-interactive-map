@@ -12,3 +12,10 @@ body {
     text-align: center;
     font-weight: bold;
 }
+
+
+#loadingMessage {
+    display: block; /* Display initially */
+    text-align: center;
+    font-weight: bold;
+}
