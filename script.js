@@ -47,8 +47,8 @@ class TravelMap {
         if (this.map) {
             this.map.remove(); // If map exists, remove it before creating a new one
         }
-        this.map = L.map('map').setView(coords, 14);
-
+        this.map = L.map('map').setView(coords, 10);
+// setting initial zoom level 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19
         }).addTo(this.map);
