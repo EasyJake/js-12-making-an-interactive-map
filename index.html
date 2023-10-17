@@ -4,25 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailored Travel App</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> 
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="mobile.css"> 
+    <style>
+       styles.css
+       
+    </style>
 </head>
 <body>
-    <h1>Welcome to Tailored Travel App</h1>
 
-    <label for="businessType">Choose a business type:</label>
-   <!-- Add more business types to the dropdown -->
-<select id="businessType">
-    <option value="cafe">Cafe</option>
-    <option value="restaurant">Restaurant</option>
-    <option value="grocery">Grocery Stores</option>
-    <option value="bars">Bars</option>
-    <option value="fastfood">Fast Food Restaurants</option>
-</select>
+    <!-- Container simulating the mobile viewport -->
+    <div id="mobile-container">
+        <h1>Tailored Travel</h1>
 
-    
-    <div id="loadingMessage">Loading...</div>
-    <div id="map"></div>
+        <label for="businessType">Choose a business:</label>
+
+        <select id="businessType">
+            <option value="cafe">Cafe</option>
+            <option value="restaurant">Restaurant</option>
+            <option value="grocery">Grocery Stores</option>
+            <option value="bars">Bars</option>
+            <option value="fastfood">Fast Food Restaurants</option>
+        </select>
+
+        <div id="loadingMessage">Loading...</div>
+        <div id="map"></div>
+    </div> <!-- Closing the mobile container -->
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="script.js"></script>

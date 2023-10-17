@@ -19,3 +19,6 @@ body {
     text-align: center;
     font-weight: bold;
 }
+h1 {
+    text-align: center; /* Centers the text inside the h1 element */
+}

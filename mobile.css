@@ -1,0 +1,10 @@
+#mobile-container {
+    width: 375px; /* Width of the mobile device */
+    height: 667px; /* Height of the mobile device */
+    overflow: hidden; /* Avoid overflow of inner content */
+    border: 1px solid #000; /* Representing device boundary */
+    border-radius: 20px; /* Optional: for rounded corners */
+    position: relative; /* Set position relative for the inner absolute positioning */
+    margin: 0 auto; /* Center the device horizontally */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: for better visualization */
+}
