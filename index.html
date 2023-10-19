@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailored Travel App</title>
-    <link rel="stylesheet" href="styles.css"> 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <link rel="stylesheet" href="mobile.css"> 
-    <style>
-       styles.css
-       
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="./map.js" defer></script>
+  <link rel="stylesheet" href="./style.css">
+  <title>Interactive Map</title>
 </head>
+
 <body>
-
-    <!-- Container simulating the mobile viewport -->
-    <div id="mobile-container">
-        <h1>Tailored Travel</h1>
-
-        <label for="businessType">Choose a business:</label>
-
-        <select id="businessType">
-            <option value="cafe">Cafe</option>
-            <option value="restaurant">Restaurant</option>
-            <option value="grocery">Grocery Stores</option>
-            <option value="bars">Bars</option>
-            <option value="fastfood">Fast Food Restaurants</option>
-        </select>
-
-        <div id="loadingMessage">Loading...</div>
-        <div id="map"></div>
-    </div> <!-- Closing the mobile container -->
-
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="script.js"></script>
+  <!-- <div class="dropdown">
+    <button>Locations</button>
+    <div class="dropdown-options">
+      <a href="#">Coffee</a>
+      <a href="#">Restaurant</a>
+      <a href="#">Hotels</a>
+      <a href="#">Market</a>
+    </div>
+  </div> -->
+  <form>
+    <select id="business">
+      <option value="restaurants">Restaurants</option>
+      <option value="coffee">Coffee Shops</option>
+      <option value="hotel">Hotels</option>
+      <option value="train">Train Stations</option>
+    </select>
+    <button id="submit">Submit</button>
+  </form>
+  <div id="map"></div>
 </body>
+
 </html>
